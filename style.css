@@ -1,0 +1,380 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	top: 5rem;
+	left: 7rem;
+}
+
+#bgImage {
+	position: relative;
+	top: 2.1rem;
+	width: 67%;
+}
+
+#curve {
+	width: 30%;
+	position: absolute;
+	right: 20rem;
+	top: 19.5rem;
+}
+.picture {
+	position: absolute;
+	width: 52%;
+	top: 4rem;
+	left: 1.8rem;
+	border-radius: 5px;
+}
+
+.button {
+	width: 4.6rem;
+	height: 2.2rem;
+	background-color: white;
+	border-radius: 35px;
+	position: relative;
+	top: -1rem;
+	left: 8rem;
+}
+
+#prev {
+	position: absolute;
+	top: 0.7rem;
+	left: 0.7rem;
+	width: 14%;
+}
+
+#next {
+	position: absolute;
+	top: 0.7rem;
+	left: 3.3rem;
+	width: 14%;
+}
+
+#quoteImg {
+	width: 5rem;
+	position: relative;
+	top: 2rem;
+	left: 8rem;
+}
+
+.quote {
+	color: hsl(240, 38%, 20%);
+	position: relative;
+	width: 65%;
+	text-align: center;
+	letter-spacing: 1.5;
+	line-height: 1.5;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.person {
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	top: 5rem;
+	left: -6.5rem;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+p {
+	margin: 0;
+}
+
+.profession {
+	color: hsl(240, 18%, 77%);
+	font-weight: 400;
+	padding-top: 0.3rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	bottom: -30rem;
+	left: 7rem;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+#tanyaQuote,
+#tanyaImg,
+#Tanya {
+	display: none;
+}
+
+@media only screen and (min-width: 600px) {
+	.picture {
+		top: 5em;
+		left: 3em;
+	}
+
+	.button {
+		position: relative;
+        top:-2rem;
+		left: 11rem;
+	}
+	#quoteImg {
+		left: 11rem;
+	}
+	.person {
+		left: -9rem;
+	}
+}
+@media only screen and (min-width: 700px) {
+	.container {
+		top: 2rem;
+	}
+
+	.button {
+		position: relative;
+		left: 12rem;
+	}
+	#quoteImg {
+		left: 12rem;
+	}
+	.person {
+		left: -12rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.flex {
+		display: inline-flex;
+		flex-direction: row-reverse;
+	}
+
+	.left {
+		margin-left: 3%;
+        width:50%;
+	}
+	.person {
+		display: inline;
+		left: 5rem;
+	}
+	.quote {
+		width: 100%;
+	}
+
+	.container {
+		position: relative;
+		top:7rem;
+	}
+
+	#bgImage {
+		position: relative;
+		right: 10rem;
+		width: 50vw;
+	}
+
+	.picture {
+		position: absolute;
+		width: 75%;
+		top: 5rem;
+		left: -4rem;
+	}
+	.button {
+		position: relative;
+		top: -3rem;
+		left: -2rem;
+	}
+
+	#quoteImg {
+		position: absolute;
+		top: 10rem;
+		left: -2rem;
+	}
+
+	.quote {
+		position: relative;
+		top: 12rem;
+		left: -4rem;
+		letter-spacing: 2;
+		text-align: left;
+		font-size: 20px;
+	}
+
+	.person {
+		top: 15rem;
+	}
+
+	.person p {
+		display: inline;
+		text-align: left;
+		position: relative;
+		left: -12rem;
+		top: -2rem;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.person p {
+		left: -14rem;
+	}
+
+	
+	.button {
+		position: relative;
+		top: -2rem;
+		left:2rem;
+	}
+}
+
+@media only screen and (min-width: 1050px) {
+
+	.left {
+		margin-left: 6%;
+	}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.person p {
+		left: -19rem;
+		top:1rem;
+	}
+
+	#quoteImg {
+		position: relative;
+		top: 14rem;
+		
+	}
+
+	.quote {
+		position: relative;
+		top:12rem;
+	}
+
+	.button {
+		position: relative;
+		top: -2rem;
+		left:2rem;
+	}
+	
+	.picture {
+		position: absolute;
+		width: 76%;
+		top: 7rem;
+		left: -4rem;
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	
+	.left {
+		margin-left: 9%;
+	}
+	
+	#quoteImg {
+		position: relative;
+		top: 15rem;
+		left: -3rem;
+	}
+
+	.quote {
+		position: relative;
+		top: 13rem;
+		left: -5rem;
+		letter-spacing: 2;
+		font-size: 24px;
+	}
+
+	.button {
+		position: relative;
+		top: -3rem;
+		left:3rem;
+	}
+	.person p {
+		left: -22rem;
+		top:1rem;
+	}
+}
+
+@media only screen and (min-width: 1550px) {
+	.left {
+		margin-left: 12%;
+	}
+	
+	.right {
+		margin-right: 3rem;
+	}
+	#bgImage {
+		position: relative;
+		right: 10rem;
+		width: 40vw;
+	}
+
+	.picture {
+		position: absolute;
+		width: 75%;
+		top: 7rem;
+		left: -6rem;
+	}
+	.person p {
+		left: -22rem;
+		top: 1rem;
+	}
+
+	.quote{
+		padding-right:3rem;
+	}
+}
+@media only screen and (min-width: 1750px) {
+
+	.left {
+		margin-left: 20%;
+	}
+	
+	.right {
+		margin-right: 5rem;
+	}
+	.picture {
+		position: absolute;
+		left: -4rem;
+	}
+	.person p {
+		left: -24rem;
+		top: 5rem;
+	}
+
+	.button {
+		position: relative;
+		top: -4rem;
+		left: 2rem;
+	}
+
+	#quoteImg {
+		position: relative;
+		top: 17rem;
+		left: -3rem;
+	}
+
+	.quote {
+		position: relative;
+		top: 15rem;
+	}
+
+	.person p {
+		left: -21rem;
+		top: 3rem;
+
+	}
+}
